@@ -1,0 +1,2102 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.0514.2217                               -->
+<workbook original-version='18.1' source-build='2025.2.0 (20252.25.0514.2217)' source-platform='win' version='18.1' xml:base='https://localhost:8080' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location derived-from='https://public.tableau.com/workbooks/climatechangedashboard_17594144403380?rev=1.2' id='climatechangedashboard_17594144403380' path='/workbooks' revision='1.2' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='climate_change_dataset' inline='true' name='federated.1vvwajp1l7bs0215v4yyz071gev9' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='climate_change_dataset' name='textscan.0577ihl0up4or914spcpf0i4ivve'>
+            <connection class='textscan' directory='C:/Users/Admin/Downloads' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0577ihl0up4or914spcpf0i4ivve' name='climate_change_dataset.csv' table='[climate_change_dataset#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='string' name='Country' ordinal='1' />
+            <column datatype='real' name='Avg Temperature (°C)' ordinal='2' />
+            <column datatype='real' name='CO2 Emissions (Tons/Capita)' ordinal='3' />
+            <column datatype='real' name='Sea Level Rise (mm)' ordinal='4' />
+            <column datatype='integer' name='Rainfall (mm)' ordinal='5' />
+            <column datatype='integer' name='Population' ordinal='6' />
+            <column datatype='real' name='Renewable Energy (%)' ordinal='7' />
+            <column datatype='integer' name='Extreme Weather Events' ordinal='8' />
+            <column datatype='real' name='Forest Area (%)' ordinal='9' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[climate_change_dataset.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[climate_change_dataset.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[climate_change_dataset.csv_46C1D2ED30BA4399B7115A6E28AB11D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[climate_change_dataset.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[climate_change_dataset.csv_46C1D2ED30BA4399B7115A6E28AB11D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg Temperature (°C)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg Temperature (°C)]</local-name>
+            <parent-name>[climate_change_dataset.csv]</parent-name>
+            <remote-alias>Avg Temperature (°C)</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[climate_change_dataset.csv_46C1D2ED30BA4399B7115A6E28AB11D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CO2 Emissions (Tons/Capita)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CO2 Emissions (Tons/Capita)]</local-name>
+            <parent-name>[climate_change_dataset.csv]</parent-name>
+            <remote-alias>CO2 Emissions (Tons/Capita)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[climate_change_dataset.csv_46C1D2ED30BA4399B7115A6E28AB11D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sea Level Rise (mm)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sea Level Rise (mm)]</local-name>
+            <parent-name>[climate_change_dataset.csv]</parent-name>
+            <remote-alias>Sea Level Rise (mm)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[climate_change_dataset.csv_46C1D2ED30BA4399B7115A6E28AB11D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rainfall (mm)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Rainfall (mm)]</local-name>
+            <parent-name>[climate_change_dataset.csv]</parent-name>
+            <remote-alias>Rainfall (mm)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[climate_change_dataset.csv_46C1D2ED30BA4399B7115A6E28AB11D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Population</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Population]</local-name>
+            <parent-name>[climate_change_dataset.csv]</parent-name>
+            <remote-alias>Population</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[climate_change_dataset.csv_46C1D2ED30BA4399B7115A6E28AB11D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Renewable Energy (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Renewable Energy (%)]</local-name>
+            <parent-name>[climate_change_dataset.csv]</parent-name>
+            <remote-alias>Renewable Energy (%)</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[climate_change_dataset.csv_46C1D2ED30BA4399B7115A6E28AB11D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Extreme Weather Events</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Extreme Weather Events]</local-name>
+            <parent-name>[climate_change_dataset.csv]</parent-name>
+            <remote-alias>Extreme Weather Events</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[climate_change_dataset.csv_46C1D2ED30BA4399B7115A6E28AB11D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Forest Area (%)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Forest Area (%)]</local-name>
+            <parent-name>[climate_change_dataset.csv]</parent-name>
+            <remote-alias>Forest Area (%)</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[climate_change_dataset.csv_46C1D2ED30BA4399B7115A6E28AB11D7]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Avg Temprature' datatype='integer' name='[Calculation_1409908218001567747]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='RANK_UNIQUE(AVG([Avg Temperature (°C)]), &apos;desc&apos;)'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <column caption='climate_change_dataset.csv' datatype='table' name='[__tableau_internal_object_id__].[climate_change_dataset.csv_46C1D2ED30BA4399B7115A6E28AB11D7]' role='measure' type='quantitative' />
+      <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Admin/AppData/Local/Temp/TableauTemp/#TableauTemp_0scs9b41tlspvz172ajie09hoa7w.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/02/2025 08:34:29 AM' username=''>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>0</ordinal>
+              <family>climate_change_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[climate_change_dataset.csv_46C1D2ED30BA4399B7115A6E28AB11D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country</remote-alias>
+              <ordinal>1</ordinal>
+              <family>climate_change_dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[climate_change_dataset.csv_46C1D2ED30BA4399B7115A6E28AB11D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Avg Temperature (°C)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Avg Temperature (°C)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Avg Temperature (°C)</remote-alias>
+              <ordinal>2</ordinal>
+              <family>climate_change_dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>292</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[climate_change_dataset.csv_46C1D2ED30BA4399B7115A6E28AB11D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CO2 Emissions (Tons/Capita)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[CO2 Emissions (Tons/Capita)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CO2 Emissions (Tons/Capita)</remote-alias>
+              <ordinal>3</ordinal>
+              <family>climate_change_dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>194</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[climate_change_dataset.csv_46C1D2ED30BA4399B7115A6E28AB11D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sea Level Rise (mm)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Sea Level Rise (mm)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sea Level Rise (mm)</remote-alias>
+              <ordinal>4</ordinal>
+              <family>climate_change_dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>41</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[climate_change_dataset.csv_46C1D2ED30BA4399B7115A6E28AB11D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Rainfall (mm)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Rainfall (mm)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Rainfall (mm)</remote-alias>
+              <ordinal>5</ordinal>
+              <family>climate_change_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>799</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[climate_change_dataset.csv_46C1D2ED30BA4399B7115A6E28AB11D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Population</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Population]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Population</remote-alias>
+              <ordinal>6</ordinal>
+              <family>climate_change_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1000</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[climate_change_dataset.csv_46C1D2ED30BA4399B7115A6E28AB11D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Renewable Energy (%)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Renewable Energy (%)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Renewable Energy (%)</remote-alias>
+              <ordinal>7</ordinal>
+              <family>climate_change_dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>407</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[climate_change_dataset.csv_46C1D2ED30BA4399B7115A6E28AB11D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Extreme Weather Events</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Extreme Weather Events]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Extreme Weather Events</remote-alias>
+              <ordinal>8</ordinal>
+              <family>climate_change_dataset.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>15</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[climate_change_dataset.csv_46C1D2ED30BA4399B7115A6E28AB11D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Forest Area (%)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Forest Area (%)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Forest Area (%)</remote-alias>
+              <ordinal>9</ordinal>
+              <family>climate_change_dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>473</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[climate_change_dataset.csv_46C1D2ED30BA4399B7115A6E28AB11D7]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Country:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Argentina&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;China&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Indonesia&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;India&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;South Africa&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Australia&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;UK&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;USA&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Germany&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Mexico&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Japan&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Brazil&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;France&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Russia&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Canada&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='climate_change_dataset.csv' id='climate_change_dataset.csv_46C1D2ED30BA4399B7115A6E28AB11D7'>
+            <properties context=''>
+              <relation connection='textscan.0577ihl0up4or914spcpf0i4ivve' name='climate_change_dataset.csv' table='[climate_change_dataset#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='Year' ordinal='0' />
+                  <column datatype='string' name='Country' ordinal='1' />
+                  <column datatype='real' name='Avg Temperature (°C)' ordinal='2' />
+                  <column datatype='real' name='CO2 Emissions (Tons/Capita)' ordinal='3' />
+                  <column datatype='real' name='Sea Level Rise (mm)' ordinal='4' />
+                  <column datatype='integer' name='Rainfall (mm)' ordinal='5' />
+                  <column datatype='integer' name='Population' ordinal='6' />
+                  <column datatype='real' name='Renewable Energy (%)' ordinal='7' />
+                  <column datatype='integer' name='Extreme Weather Events' ordinal='8' />
+                  <column datatype='real' name='Forest Area (%)' ordinal='9' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#0000ff' fontname='Benton Sans Book'>Trend of Average Temperature</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://public.tableau.com/workbooks/climatechangedashboard_17594144403380/Sheet1?rev=' id='121921930' path='/workbooks/climatechangedashboard_17594144403380' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='climate_change_dataset' name='federated.1vvwajp1l7bs0215v4yyz071gev9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1vvwajp1l7bs0215v4yyz071gev9'>
+            <column datatype='real' name='[Avg Temperature (°C)]' role='measure' type='quantitative' />
+            <column caption='Avg Temprature' datatype='integer' name='[Calculation_1409908218001567747]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='RANK_UNIQUE(AVG([Avg Temperature (°C)]), &apos;desc&apos;)'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1409908218001567747]' derivation='User' name='[usr:Calculation_1409908218001567747:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1vvwajp1l7bs0215v4yyz071gev9].[none:Country:nk]'>
+            <groupfilter count='5' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Avg Temperature (°C)])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Country:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.1vvwajp1l7bs0215v4yyz071gev9].[usr:Calculation_1409908218001567747:qk]' included-values='in-range' />
+          <slices>
+            <column>[federated.1vvwajp1l7bs0215v4yyz071gev9].[none:Country:nk]</column>
+            <column>[federated.1vvwajp1l7bs0215v4yyz071gev9].[usr:Calculation_1409908218001567747:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1vvwajp1l7bs0215v4yyz071gev9].[none:Year:qk]' field-type='quantitative' max='2041' min='2003' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1vvwajp1l7bs0215v4yyz071gev9].[usr:Calculation_1409908218001567747:qk]' field-type='quantitative' max='23' min='-14' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5ead7' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1vvwajp1l7bs0215v4yyz071gev9].[none:Country:nk]' />
+              <text column='[federated.1vvwajp1l7bs0215v4yyz071gev9].[none:Country:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.9010497331619263' />
+                <format attr='mark-color' value='#0000ff' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1vvwajp1l7bs0215v4yyz071gev9].[usr:Calculation_1409908218001567747:qk]</rows>
+        <cols>[federated.1vvwajp1l7bs0215v4yyz071gev9].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{63D17CED-3A65-4442-B49E-BCF878B10EEF}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#0000ff' fontname='Benton Sans Book'>CO2 Emissions by Country</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://public.tableau.com/workbooks/climatechangedashboard_17594144403380/Sheet2?rev=' id='121921931' path='/workbooks/climatechangedashboard_17594144403380' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='climate_change_dataset' name='federated.1vvwajp1l7bs0215v4yyz071gev9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1vvwajp1l7bs0215v4yyz071gev9'>
+            <column datatype='real' name='[CO2 Emissions (Tons/Capita)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[CO2 Emissions (Tons/Capita)]' derivation='Sum' name='[sum:CO2 Emissions (Tons/Capita):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1vvwajp1l7bs0215v4yyz071gev9].[none:Country:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1vvwajp1l7bs0215v4yyz071gev9].[sum:CO2 Emissions (Tons/Capita):qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5ead7' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#4e79a7' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1vvwajp1l7bs0215v4yyz071gev9].[none:Country:nk]</rows>
+        <cols>[federated.1vvwajp1l7bs0215v4yyz071gev9].[sum:CO2 Emissions (Tons/Capita):qk]</cols>
+      </table>
+      <simple-id uuid='{F26FA200-FD86-4363-8431-A79394D4FBFA}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#0000ff' fontname='Benton Sans Book'>Extreme Weather Events Over Time</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://public.tableau.com/workbooks/climatechangedashboard_17594144403380/Sheet3?rev=' id='121921932' path='/workbooks/climatechangedashboard_17594144403380' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='climate_change_dataset' name='federated.1vvwajp1l7bs0215v4yyz071gev9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1vvwajp1l7bs0215v4yyz071gev9'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='integer' name='[Extreme Weather Events]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Extreme Weather Events]' derivation='Sum' name='[sum:Extreme Weather Events:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1vvwajp1l7bs0215v4yyz071gev9].[none:Country:nk]'>
+            <groupfilter count='5' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Extreme Weather Events])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Country:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1vvwajp1l7bs0215v4yyz071gev9].[none:Country:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5ead7' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1vvwajp1l7bs0215v4yyz071gev9].[none:Country:nk]' />
+              <text column='[federated.1vvwajp1l7bs0215v4yyz071gev9].[none:Country:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1vvwajp1l7bs0215v4yyz071gev9].[sum:Extreme Weather Events:qk]</rows>
+        <cols>[federated.1vvwajp1l7bs0215v4yyz071gev9].[none:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{F541CBC6-867E-45E0-A57B-324FCFF293E5}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#0000ff' fontname='Benton Sans Book'>Renewable Energy vs Forest Area</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://public.tableau.com/workbooks/climatechangedashboard_17594144403380/Sheet4?rev=' id='121921933' path='/workbooks/climatechangedashboard_17594144403380' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='climate_change_dataset' name='federated.1vvwajp1l7bs0215v4yyz071gev9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1vvwajp1l7bs0215v4yyz071gev9'>
+            <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='real' name='[Forest Area (%)]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Renewable Energy (%)]' role='measure' type='quantitative' />
+            <column-instance column='[Country]' derivation='None' name='[none:Country:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Forest Area (%)]' derivation='Sum' name='[sum:Forest Area (%):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Renewable Energy (%)]' derivation='Sum' name='[sum:Renewable Energy (%):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1vvwajp1l7bs0215v4yyz071gev9].[sum:Renewable Energy (%):qk]' field-type='quantitative' max='2245.3085340089679' range-type='fixedmax' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5eddc' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1vvwajp1l7bs0215v4yyz071gev9].[none:Country:nk]' />
+              <text column='[federated.1vvwajp1l7bs0215v4yyz071gev9].[none:Country:nk]' />
+            </encodings>
+            <trendline enable-confidence-bands='false' enable-instant-analytics='true' enabled='true' exclude-color='false' exclude-intercept='false' fit='linear' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1vvwajp1l7bs0215v4yyz071gev9].[sum:Forest Area (%):qk]</rows>
+        <cols>[federated.1vvwajp1l7bs0215v4yyz071gev9].[sum:Renewable Energy (%):qk]</cols>
+      </table>
+      <simple-id uuid='{BA35C7AF-622E-4F82-87EC-0A1F83A43FE2}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontcolor='#606b76' fontname='Benton Sans SemiDemi' fontsize='10'>Average Temperature (°C)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://public.tableau.com/workbooks/climatechangedashboard_17594144403380/Sheet5?rev=' id='121921935' path='/workbooks/climatechangedashboard_17594144403380' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='climate_change_dataset' name='federated.1vvwajp1l7bs0215v4yyz071gev9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1vvwajp1l7bs0215v4yyz071gev9'>
+            <column datatype='real' name='[Avg Temperature (°C)]' role='measure' type='quantitative' />
+            <column-instance column='[Avg Temperature (°C)]' derivation='Avg' name='[avg:Avg Temperature (°C):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#59a14f' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5ead7' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1vvwajp1l7bs0215v4yyz071gev9].[avg:Avg Temperature (°C):qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='15'>&lt;</run>
+                <run fontsize='15'>[federated.1vvwajp1l7bs0215v4yyz071gev9].[avg:Avg Temperature (°C):qk]</run>
+                <run fontsize='15'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='1.1534254550933838' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{E25E0DD4-38C2-4A93-A77A-4C77E05C5806}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#606b76' fontname='Benton Sans Book' fontsize='10'>CO₂ Emissions (Tons per Capita)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://public.tableau.com/workbooks/climatechangedashboard_17594144403380/Sheet6?rev=' id='121921936' path='/workbooks/climatechangedashboard_17594144403380' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='climate_change_dataset' name='federated.1vvwajp1l7bs0215v4yyz071gev9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1vvwajp1l7bs0215v4yyz071gev9'>
+            <column datatype='real' name='[CO2 Emissions (Tons/Capita)]' role='measure' type='quantitative' />
+            <column-instance column='[CO2 Emissions (Tons/Capita)]' derivation='Avg' name='[avg:CO2 Emissions (Tons/Capita):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' value='#4e79a7' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5ead7' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1vvwajp1l7bs0215v4yyz071gev9].[avg:CO2 Emissions (Tons/Capita):qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#59a14f' fontsize='15'>&lt;</run>
+                <run fontcolor='#59a14f' fontsize='15'>[federated.1vvwajp1l7bs0215v4yyz071gev9].[avg:CO2 Emissions (Tons/Capita):qk]</run>
+                <run fontcolor='#59a14f' fontsize='15'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{AF3E8A77-646B-44B2-A33A-E78E91C6CAA0}' />
+    </worksheet>
+    <worksheet name='Sheet 7'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#606b76' fontname='Benton Sans Book' fontsize='10'>Sea Level Rise (mm)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://public.tableau.com/workbooks/climatechangedashboard_17594144403380/Sheet7?rev=' id='121921937' path='/workbooks/climatechangedashboard_17594144403380' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='climate_change_dataset' name='federated.1vvwajp1l7bs0215v4yyz071gev9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1vvwajp1l7bs0215v4yyz071gev9'>
+            <column datatype='real' name='[Sea Level Rise (mm)]' role='measure' type='quantitative' />
+            <column-instance column='[Sea Level Rise (mm)]' derivation='Avg' name='[avg:Sea Level Rise (mm):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5ead7' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1vvwajp1l7bs0215v4yyz071gev9].[avg:Sea Level Rise (mm):qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#59a14f' fontsize='15'>&lt;</run>
+                <run fontcolor='#59a14f' fontsize='15'>[federated.1vvwajp1l7bs0215v4yyz071gev9].[avg:Sea Level Rise (mm):qk]</run>
+                <run fontcolor='#59a14f' fontsize='15'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{5B13FE96-DE55-4157-BA00-859779CEACF6}' />
+    </worksheet>
+    <worksheet name='Sheet 8'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#606b76' fontname='Benton Sans Book' fontsize='10'>Rainfall  (mm)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://public.tableau.com/workbooks/climatechangedashboard_17594144403380/Sheet8?rev=' id='121921938' path='/workbooks/climatechangedashboard_17594144403380' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='climate_change_dataset' name='federated.1vvwajp1l7bs0215v4yyz071gev9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1vvwajp1l7bs0215v4yyz071gev9'>
+            <column datatype='integer' name='[Rainfall (mm)]' role='measure' type='quantitative' />
+            <column-instance column='[Rainfall (mm)]' derivation='Avg' name='[avg:Rainfall (mm):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f5ead7' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1vvwajp1l7bs0215v4yyz071gev9].[avg:Rainfall (mm):qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#59a14f' fontsize='15'>&lt;</run>
+                <run fontcolor='#59a14f' fontsize='15'>[federated.1vvwajp1l7bs0215v4yyz071gev9].[avg:Rainfall (mm):qk]</run>
+                <run fontcolor='#59a14f' fontsize='15'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{4D59808D-6A86-479C-93B5-F71CDF12F238}' />
+    </worksheet>
+    <worksheet name='Sheet 9'>
+      <repository-location derived-from='https://public.tableau.com/workbooks/climatechangedashboard_17594144403380/Sheet9?rev=' id='121921939' path='/workbooks/climatechangedashboard_17594144403380' revision='' />
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{6C37A7F7-A3E1-4FB2-9C4B-C55DE92683E2}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontcolor='#f28e2b' fontname='Berlin Sans FB Demi'>Climate Compass</run>
+            <run fontcolor='#f28e2b' fontname='Berlin Sans FB Demi'> – </run>
+            <run fontcolor='#f28e2b' fontname='Berlin Sans FB Demi' italic='true'>Monitoring CO₂, Temperature &amp; Sustainability Trends</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location derived-from='https://public.tableau.com/workbooks/climatechangedashboard_17594144403380/Dashboard1?rev=' id='121921934' path='/workbooks/climatechangedashboard_17594144403380' revision='' />
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97906' id='14' param='vert' type-v2='layout-flow' w='98984' x='508' y='1047'>
+            <zone fixed-size='28' h='4712' id='15' is-fixed='true' type-v2='title' w='98984' x='508' y='1047'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone fixed-size='107' h='14005' id='16' is-fixed='true' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='98984' x='508' y='5759'>
+              <zone h='14005' id='17' name='Sheet 5' w='24762' x='508' y='5759'>
+                <layout-cache fixed-size-h='81' fixed-size-w='125' type-h='fixed' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='14005' id='18' name='Sheet 6' w='24762' x='25270' y='5759'>
+                <layout-cache fixed-size-h='81' fixed-size-w='125' type-h='fixed' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='14005' id='19' name='Sheet 7' w='24762' x='50032' y='5759'>
+                <layout-cache fixed-size-h='81' fixed-size-w='125' type-h='fixed' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='14005' id='20' name='Sheet 8' w='24698' x='74794' y='5759'>
+                <layout-cache fixed-size-h='81' fixed-size-w='105' type-h='fixed' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone h='79189' id='9' param='horz' type-v2='layout-flow' w='98984' x='508' y='19764'>
+              <zone h='79189' id='7' type-v2='layout-basic' w='48190' x='508' y='19764'>
+                <zone h='39550' id='5' name='Sheet 2' w='48190' x='508' y='19764'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='39639' id='6' name='Sheet 3' w='48190' x='508' y='59314'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone fixed-size='800' h='79189' id='33' is-fixed='true' type-v2='layout-basic' w='50794' x='48698' y='19764'>
+                <zone h='39522' id='8' layout-strategy-id='distribute-evenly' param='vert' type-v2='layout-flow' w='50794' x='48698' y='19764'>
+                  <zone fixed-size='279' h='39529' id='12' is-fixed='true' name='Sheet 1' w='50794' x='48698' y='19764'>
+                    <layout-cache minheight='224' minwidth='173' type-h='scalable' type-w='scalable' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+                <zone h='39667' id='34' param='vert' type-v2='layout-flow' w='50794' x='48698' y='59286'>
+                  <zone h='39667' id='11' name='Sheet 4' w='50794' x='48698' y='59286'>
+                    <layout-cache minheight='224' minwidth='189' type-h='scalable' type-w='scalable' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+            <format attr='background-color' value='#ebebeb' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontcolor='#f28e2b' fontname='Berlin Sans FB Demi'>Climate Compass</run>
+                <run fontcolor='#f28e2b' fontname='Berlin Sans FB Demi'> – </run>
+                <run fontcolor='#f28e2b' fontname='Berlin Sans FB Demi' italic='true'>Monitoring CO₂, Temperature &amp; Sustainability Trends</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1700' minheight='1700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='42' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97906' id='41' param='vert' type-v2='layout-flow' w='98984' x='508' y='1047'>
+                <zone fixed-size='28' h='4712' id='15' type-v2='title' w='98984' x='508' y='1047'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='104' h='14005' id='17' is-fixed='true' name='Sheet 5' w='24762' x='508' y='5759'>
+                  <layout-cache fixed-size-h='81' fixed-size-w='125' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='104' h='14005' id='18' is-fixed='true' name='Sheet 6' w='24762' x='25270' y='5759'>
+                  <layout-cache fixed-size-h='81' fixed-size-w='125' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='104' h='14005' id='19' is-fixed='true' name='Sheet 7' w='24762' x='50032' y='5759'>
+                  <layout-cache fixed-size-h='81' fixed-size-w='125' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='104' h='14005' id='20' is-fixed='true' name='Sheet 8' w='24698' x='74794' y='5759'>
+                  <layout-cache fixed-size-h='81' fixed-size-w='105' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='39550' id='5' is-fixed='true' name='Sheet 2' w='48190' x='508' y='19764'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='39529' id='12' is-fixed='true' name='Sheet 1' w='50794' x='48698' y='19764'>
+                  <layout-cache minheight='224' minwidth='173' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='39667' id='11' is-fixed='true' name='Sheet 4' w='50794' x='48698' y='59286'>
+                  <layout-cache minheight='224' minwidth='189' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='39639' id='6' is-fixed='true' name='Sheet 3' w='48190' x='508' y='59314'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+                <format attr='background-color' value='#ebebeb' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{EEB44685-CCBD-4CED-A122-E47BA3C9A937}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <repository-location derived-from='https://public.tableau.com/workbooks/climatechangedashboard_17594144403380/Dashboard2?rev=' id='121921940' path='/workbooks/climatechangedashboard_17594144403380' revision='' />
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98044' id='3' param='vert' type-v2='layout-flow' w='99008' x='496' y='978'>
+            <zone fixed-size='196' h='23961' id='5' is-fixed='true' layout-strategy-id='distribute-evenly' param='horz' type-v2='layout-flow' w='99008' x='496' y='978'>
+              <zone h='23961' id='6' name='Sheet 5' w='24783' x='496' y='978'>
+                <layout-cache fixed-size-h='153' fixed-size-w='100' type-h='fixed' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='23961' id='7' name='Sheet 6' w='24783' x='25279' y='978'>
+                <layout-cache fixed-size-h='177' fixed-size-w='100' type-h='fixed' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='23961' id='8' name='Sheet 7' w='24721' x='50062' y='978'>
+                <layout-cache fixed-size-h='129' fixed-size-w='60' type-h='fixed' type-w='fixed' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='191' h='23961' id='9' is-fixed='true' name='Sheet 8' w='24721' x='74783' y='978'>
+                <layout-cache fixed-size-h='81' type-h='fixed' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone h='74083' id='10' param='vert' type-v2='layout-flow' w='99008' x='496' y='24939'>
+              <zone h='74083' id='11' param='horz' type-v2='layout-flow' w='99008' x='496' y='24939' />
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+            <format attr='background-color' value='#f5ead7' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='800' minheight='800' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='27' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='26' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='184' h='23961' id='6' is-fixed='true' name='Sheet 5' w='24783' x='496' y='978'>
+                  <layout-cache fixed-size-h='153' fixed-size-w='100' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='184' h='23961' id='7' is-fixed='true' name='Sheet 6' w='24783' x='25279' y='978'>
+                  <layout-cache fixed-size-h='177' fixed-size-w='100' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='184' h='23961' id='8' is-fixed='true' name='Sheet 7' w='24721' x='50062' y='978'>
+                  <layout-cache fixed-size-h='129' fixed-size-w='60' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='184' h='23961' id='9' is-fixed='true' name='Sheet 8' w='24721' x='74783' y='978'>
+                  <layout-cache fixed-size-h='81' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+                <format attr='background-color' value='#f5ead7' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{09A5E335-7CAE-4A06-8ED2-2BD736DAB6A0}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1vvwajp1l7bs0215v4yyz071gev9].[none:Country:nk]</field>
+            <field>[federated.1vvwajp1l7bs0215v4yyz071gev9].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{ACB49C50-198A-4603-B8BD-0C5C5B8C7E1F}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1vvwajp1l7bs0215v4yyz071gev9].[none:Country:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{9AB7F37B-49D8-4353-9F5C-443F89FA0748}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1vvwajp1l7bs0215v4yyz071gev9].[none:Country:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1vvwajp1l7bs0215v4yyz071gev9].[none:Country:nk]</field>
+            <field>[federated.1vvwajp1l7bs0215v4yyz071gev9].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{5807CDA5-BE6A-4E1C-9890-DEF0DF1431EC}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1vvwajp1l7bs0215v4yyz071gev9].[none:Country:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1vvwajp1l7bs0215v4yyz071gev9].[none:Country:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{19DA3A9F-A965-417E-BAE3-6BF9276517DA}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 2' />
+        <viewpoint name='Sheet 3'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 4'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 5'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Sheet 6'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Sheet 7'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Sheet 8'>
+          <zoom type='fit-width' />
+        </viewpoint>
+      </viewpoints>
+      <active id='12' />
+      <device-preview visible='true'>
+        <device is-portrait='false' name='Generic Desktop Monitor' type='Desktop' />
+      </device-preview>
+      <simple-id uuid='{C926B30A-2433-4A63-B752-D664E5C288AC}' />
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1vvwajp1l7bs0215v4yyz071gev9].[avg:Avg Temperature (°C):qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>19.883099999999999</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+      </viewpoint>
+      <simple-id uuid='{6129781A-0BCB-4DAA-AC39-6C49E71EBEB0}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1vvwajp1l7bs0215v4yyz071gev9].[avg:CO2 Emissions (Tons/Capita):qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>10.425799999999981</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+      </viewpoint>
+      <simple-id uuid='{414EBA12-91E8-4A63-B48C-B2EC4BBB4DCB}' />
+    </window>
+    <window class='worksheet' name='Sheet 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{930E8C60-B21E-4AFE-BB64-1E2839A51D34}' />
+    </window>
+    <window class='worksheet' name='Sheet 8'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4C0247E8-3483-4AC3-B2FD-F1ECEA48E8F4}' />
+    </window>
+    <window class='worksheet' name='Sheet 9'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{19764C6E-6810-4820-9A4A-60980B26CD7C}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Sheet 5' />
+        <viewpoint name='Sheet 6' />
+        <viewpoint name='Sheet 7' />
+        <viewpoint name='Sheet 8'>
+          <zoom type='fit-width' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{6AE23364-1E90-47D4-B6C9-A02EB576A31D}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
